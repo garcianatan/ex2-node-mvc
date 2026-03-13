@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express.Router()
 app.use(express.json())
-const Service = require("../service/service.js")
+const Service = require("../service/funcionarioService.js")
 const service = new Service()
 
 app.get("/funcionarios", (req, resp) => {
